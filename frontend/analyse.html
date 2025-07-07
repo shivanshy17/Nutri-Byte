@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NutriByte - Analyse</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body data-page="analyse">
+  <div class="frame">
+    <div class="div">
+      <!-- Top Rectangle Section with Embedded Navbar -->
+      <div class="rectangle">
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="analyse.html">Start Analysing</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="text-wrapper animate-heading">Start Analysing</div>
+      </div>
+
+  <!-- Upload Section -->
+  <section class="upload-section">
+    <h2>Upload Image or Scan QR</h2>
+    <p>Upload a photo of your food label or scan a product QR code to begin analysis.</p>
+    <div class="upload-actions">
+      <input type="file" id="file-upload" accept="image/*" hidden />
+      <button class="upload-btn" id="upload-btn">Upload Image</button>
+      <button class="scan-btn">Scan QR</button>
+      <p id="uploaded-file">No file selected</p>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section class="results-section">
+    <h2>Nutrition Breakdown</h2>
+    <div class="chart-block">
+      <div class="chart-card dark-card">
+        <h3>Positive Nutrients</h3>
+        <canvas id="positiveChart"></canvas>
+      </div>
+      <div class="chart-card dark-card">
+        <h3>Negative Nutrients</h3>
+        <canvas id="negativeChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h3>NutriByte</h3>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analyse.html">Start Analysing</a></li>
+          <li><a href="index.html#how">How It Works</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>Fb | Tw | Insta</p>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; 2025 NutriByte. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

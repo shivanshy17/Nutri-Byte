@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutri Byte</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts (already imported in CSS, but optional redundancy here) -->
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Kaisei+HarunoUmi:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="home">
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav class="navbar">
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="analyse.html">Start Analysing</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+    </nav>
+
+    <div class="hero-overlay">
+      <h1 class="hero-title">Nutri Byte</h1>
+      <a href="analyse.html" class="hero-button">Start Analysing</a>
+      <div class="scroll-indicator">Scroll</div>
+    </div>
+  </header>
+
+  <main id="how" aria-label="How It Works">
+  <div class="how-inner" role="region" aria-labelledby="how-title">
+    <h2 id="how-title" class="animate-heading">HOW IT WORKS</h2>
+    <div class="how-section" role="list">
+      <article class="card" tabindex="0" role="listitem" aria-label="Upload Your Photo">
+        <img src="assets/upload.jpg" alt="Upload your photo" />
+        <h3>Upload Your Photo</h3>
+        <p>
+          Simply snap a photo of any ingredient list or nutrition label using your smartphone camera.
+          Our advanced image recognition technology can read text from various angles and lighting conditions,
+          making it easy to capture clear, readable images of product labels, recipe cards, or ingredient lists.
+        </p>
+      </article>
+      <article class="card" tabindex="0" role="listitem" aria-label="AI Analysis">
+        <img src="assets/ai.jpg" alt="AI Analysis" />
+        <h3>AI Analysis</h3>
+        <p>
+          Our cutting-edge artificial intelligence processes your uploaded image within seconds.
+          Using advanced optical character recognition (OCR) and machine learning algorithms,
+          we extract ingredient information and cross-reference it with our comprehensive nutritional
+          database containing thousands of food items and their detailed nutritional profiles.
+        </p>
+      </article>
+      <article class="card" tabindex="0" role="listitem" aria-label="Get Results">
+        <img src="assets/result2.jpg" alt="Results" />
+        <h3>Get Results</h3>
+        <p>
+          Receive instant, detailed nutritional analysis including calories, macronutrients (proteins, carbs, fats),
+          vitamins, minerals, and potential allergens. Our results are presented in easy-to-understand charts and graphs,
+          helping you make informed dietary decisions and track your nutritional intake effectively.
+        </p>
+      </article>
+    </div>
+  </div>
+</main>
+
+
+
+
+  <!-- Who We Are -->
+  <section class="section who-we-are">
+    <div class="overlay">
+      <h2 >Who We Are?</h2>
+      <p class="tagline">Trusted.      Accurate.     Instant.</p>
+      <p class="desc">
+        NutriByte combines cutting-edge AI with official nutritional databases like USDA and OpenFoodFacts to deliver accurate insights. Making nutrition information accessible to everyone, one photo at a time.
+      </p>
+      <a href="about.html" class="btn">Know More</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <h2 class="animate-heading delay">LOVE FROM YOU</h2>
+    <div class="testimonial-cards">
+      <div class="card">
+        <p>“A terrific piece of praise”</p>
+        <div class="user">
+          <img src="assets/user.jpg" alt="User 1"/>
+          <div>
+            <strong>Name</strong><br/>
+            <small>Description</small>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p>“A fantastic bit of feedback”</p>
+        <div class="user">
+          <img src="assets/user.jpg" alt="User 2"/>
+          <div>
+            <strong>Name</strong><br/>
+            <small>Description</small>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <p>“A genuinely glowing review”</p>
+        <div class="user">
+          <img src="assets/user.jpg" alt="User 3"/>
+          <div>
+            <strong>Name</strong><br/>
+            <small>Description</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h3>NutriByte</h3>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analyse.html">Start Analysing</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">How It Works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <p>Fb | Tw | Insta</p>
+      </div>
+    </div>
+    <hr />
+    <div class="footer-bottom">
+      <p>&copy; 2025 NutriByte. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
